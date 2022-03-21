@@ -29,6 +29,5 @@ const spa = () => {
     document.getElementById('first').style.color = 'black';
   }, false);
 };
-spa();
 
 export default spa;
