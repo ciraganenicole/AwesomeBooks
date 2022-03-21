@@ -1,29 +1,34 @@
-document.getElementById('firstBlock').style.display = 'block';
-document.getElementById('secondBlock').style.display = 'none';
-document.getElementById('contact').style.display = 'none';
+const spa = () => {
+  document.getElementById('firstBlock').style.display = 'block';
+  document.getElementById('secondBlock').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
 
-document.getElementById('first').addEventListener('click', () => {
+  document.getElementById('first').addEventListener('click', () => {
     document.getElementById('firstBlock').style.display = 'block';
     document.getElementById('secondBlock').style.display = 'none';
     document.getElementById('contact').style.display = 'none';
     document.getElementById('first').style.color = 'blue';
     document.getElementById('third').style.color = 'black';
     document.getElementById('second').style.color = 'black';
-}, false);
+  }, false);
 
-document.getElementById('second').addEventListener('click', () => {
+  document.getElementById('second').addEventListener('click', () => {
     document.getElementById('firstBlock').style.display = 'none';
     document.getElementById('secondBlock').style.display = 'block';
     document.getElementById('contact').style.display = 'none';
     document.getElementById('second').style.color = 'blue';
     document.getElementById('third').style.color = 'black';
     document.getElementById('first').style.color = 'black';
-}, false);
-document.getElementById('third').addEventListener('click', () => {
+  }, false);
+  document.getElementById('third').addEventListener('click', () => {
     document.getElementById('firstBlock').style.display = 'none';
     document.getElementById('secondBlock').style.display = 'none';
     document.getElementById('contact').style.display = 'block';
     document.getElementById('third').style.color = 'blue';
     document.getElementById('second').style.color = 'black';
     document.getElementById('first').style.color = 'black';
-}, false);
+  }, false);
+};
+spa();
+
+export default spa;
