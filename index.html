@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome books</title>
+</head>
+
+<body>
+    <main class="main-section">
+        <header>
+            <nav>
+                <h4> Awesome Books </h4>
+                <ul class="header">
+                    <li class="list"><a href="#" id="first">List</a></li>
+                    <li class="list"><a href="#" class="black" id="second">Add new</a></li>
+                    <li class="list"><a href="#" id="third">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="time"></div>
+        <div id="firstBlock">
+            <h1>All awesome books</h1>
+            <div class="container">
+            </div>
+        </div>
+        <div id="secondBlock">
+            <h2> Add a new Book</h2>
+            <form id="book-form">
+                <input name="title" id="title" type="text" maxlength="30" placeholder="Title" required class="input" />
+                <label for="title" hidden></label>
+                <input name="author" id="author" type="text" maxlength="30" placeholder="Author" required class="input" />
+                <label for="author" hidden></label>
+                <button type="submit" class="add">Add</button>
+            </form>
+        </div>
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <p>Do you have any questions or you just want to say "Hello?"<br> You can reach out to us!
+            </p>
+            <ul class="contact">
+                <li>Our e-mail:
+                    <a href="mailto:mail@gmail.com">mail@mail.com</a>
+                </li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </div>
+        <footer>
+            <p>Copyright ...</p>
+        </footer>
+    </main>
+    <script type="module" src="index.js"></script>
+    <script src="luxon.js"></script>
+</body>
+
+</html>
